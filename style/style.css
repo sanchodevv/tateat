@@ -1107,14 +1107,16 @@ header {
 }
 .book-main-wrap {
   display: flex;
+  
   justify-content: center;
 }
 .book-main {
-  width: 920px;
+  /* width: 920px; */
   padding-inline: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 160px;
   justify-content: center;
   background-color: #292e36f2;
 }
@@ -1376,7 +1378,7 @@ footer {
 }
 @media (max-width: 450px) {
     .third-mid input{
-      width: 300px;
+      max-width:  100px;
     }
     .third-mid button {
       width: 300px;
