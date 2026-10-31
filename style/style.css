@@ -100,10 +100,9 @@ header {
 }
 .burger-menu {
   position: absolute;
-  top: 30px;
-  right: 20px;
-  width: 100%;
-  max-width: 280px;
+  top: 50px;
+  /* right: 20px; */
+  width: 85%;
   height: 300px;
   background-color: #262930;
   border: 1px solid #e1b168;
@@ -197,6 +196,9 @@ header {
   .call {
     padding: 15px 37px;
   }
+.lang-switcher select{
+  width: 40px;
+}
 }
 @media (max-width: 450px) {
   .burger img {
@@ -233,7 +235,7 @@ header {
   max-width: 616px;
   margin-block: 26px 35px;
 }
-.intro-info button {
+.view  {
   padding: 20px 57px;
   background-color: transparent;
   border: 1px solid #e1b168;
@@ -243,7 +245,7 @@ header {
   font-weight: 400;
   transition: 0.3s ease-in;
 }
-.intro-info button:hover {
+.view:hover {
   background-color: #e1b168;
   color: #292e36;
 }
