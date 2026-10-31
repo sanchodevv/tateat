@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Tasteat</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top container">
+        <button class="call" t="call">Call - 123 456 789</button>
+        <img src="./assets/logo.png" alt="" />
+        <button class="reserve" t="reserve">Reservation</button>
+      </div>
+      <hr />
+      <div class="header-bott container">
+        <nav class="nav">
+          <ul>
+            <li><a href="#home" t="home">Home</a></li>
+            <li><a href="#about Us" t="about-us">About Us</a></li>
+            <li><a href="#ourmenu" t="our-menu">Our Menu</a></li>
+            <li><a href="#pages" t="pages">Pages</a></li>
+            <li><a href="#blog" t="blog">Blog</a></li>
+            <li><a href="#contact Us" t="contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="burger" id="burger">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png"
+            alt=""
+          />
+        </button>
+        <div class="burger-menu" id="menu">
+          <ul>
+            <li><a href="#home" t="home">Home</a></li>
+            <li><a href="#about Us" t="about-us">About Us</a></li>
+            <li><a href="#our Menu" t="our-menu">Our Menu</a></li>
+            <li><a href="#pages" t="pages">Pages</a></li>
+            <li><a href="#blog" t="blog">Blog</a></li>
+            <li><a href="#contact Us" t="contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="bott-soc">
+          <div class="lang-switcher">
+            <select id="langSelect" onchange="changeLanguage(this.value)">
+              <option value="uz">O'zbekcha</option>
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <img src="./assets/IMAGE (5).png" alt="" />
+          <img src="./assets/IMAGE (6).png" alt="" />
+          <img src="./assets/IMAGE (4).png" alt="" />
+          <img src="./assets/IMAGE (7).png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-wrap container">
+          <div class="intro-info" data-aos="fade-left">
+            <h1 t="welcome-title">Welcome to Restaurant</h1>
+            <p t="welcome-desc"> 
+              The people, food and the prime locations make the perfect place
+              good friends & family to come together and have great time.
+            </p>
+            <a href="#ourmenu" t="view-menu">
+              <button>View Menu</button>
+            </a>
+          </div>
+          <div class="intro-img" data-aos="fade-right">
+            <img src="./assets/Frame.png" alt="" />
+          </div>
+        </div>
+        <div class="img-animate">
+          <img src="./assets/IMAGE (8).png" alt="" />
+        </div>
+      </section>
+      <section class="qua">
+        <div class="qua-wrap container">
+          <div class="qua-card" data-aos="fade-up">
+            <img src="./assets/Frame (1).png" alt="" />
+            <div class="qua-info">
+              <h3 t="locate-us">Locate Us</h3>
+              <p t="locate-address">Riverside 25, San Diego, California</p>
+            </div>
+          </div>
+          <div class="qua-card" data-aos="fade-up">
+            <img src="./assets/Frame (2).png" alt="" />
+            <div class="qua-info">
+              <h3 t="open-hours">Open Hours</h3>
+              <p t="open-time">Mon To Fri 9:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+          <div class="qua-card" data-aos="fade-up">
+            <img src="./assets/Frame (3).png" alt="" />
+            <div class="qua-info">
+              <h3 t="reserve">Reservation</h3>
+              <p t="reservation-email">restaurantate@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="story">
+        <div class="story-wrap container">
+          <div class="story-img" data-aos="fade">
+            <img src="./assets/story.png" alt="" />
+          </div>
+          <div class="story-info">
+            <div class="info-head" data-aos="fade-down-left">
+              <h2 t="delicious-story">The Delicious Story</h2>
+              <p t="story-desc">
+                The people, food and the prime locations make the perfect place
+                for the friends & family to come together and have great time.
+              </p>
+            </div>
+            <div class="info-years" data-aos="fade-left">
+              <div class="year1">
+                <h2 t="year-2018-title">2018</h2>
+                <p t="year-2018-desc">Plan for this restaurant to deliver healthy food.</p>
+              </div>
+              <div class="year2">
+                <h2 t="year-2022-title">2022</h2>
+                <p t="year-2022-desc">Happily in the fourth year by fulfill the motto.</p>
+              </div>
+            </div>
+            <div class="info-sign" data-aos="fade-up-left">
+              <h3 t="josefine">JOSEFINE</h3>
+              <img src="./assets/IMAGE (10).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu container">
+        <div class="menu-info" data-aos="fade-right">
+          <h3 t="menu-label">Menu</h3>
+          <h1 t="special-dishes-title">Try Our Special dishes</h1>
+          <p t="special-dishes-desc">
+            Every time you perfectly dine with us, it should happy for great
+            inspired food in an environment designed with individual touches
+            unique to the local area.
+          </p>
+          <div class="menu-img">
+            <img src="./assets/IMAGE (11).png" alt="" />
+          </div>
+          <button t="see-all-dishes">See all dishes</button>
+        </div>
+        <div class="menu-dishes">
+          <div class="dishes-card" data-aos="fade-left">
+            <h3 t="starters">Starters</h3>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="dishes-card">
+            <h3 t="main-dishes">Main Dihses</h3>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="dishes-card">
+            <h3 t="desserts">Desserts</h3>
+
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+            <div class="dish">
+              <img src="./assets/IMAGE (12).png" alt="" />
+              <div class="name">
+                <h3>Raw Scallops from Erquy</h3>
+                <p>Shuck the scallop to that used for oysters</p>
+              </div>
+              <span></span>
+              <p>$40</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="clients-wrap container">
+          <div class="clients-info" data-aos="fade-right">
+            <h3 t="testimonial">TESTIMONIAL</h3>
+            <h1 t="clients-say">Our Clients Say</h1>
+            <p t="clients-desc">
+              We love to hear from customers, so please leave a comment or say
+              hello in an email.
+            </p>
+          </div>
+          <div class="swiper mySwiper" data-aos="fade-left">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <img src="./assets/Frame (4).png" alt="" />
+                  <div class="head-name">
+                    <h2 >Natasha D</h2>
+                    <h4 t="cleint-city">Newyork</h4>
+                  </div>
+                </div>
+                <p t="client-review">
+                  They known for its fabulous taste and food. Anywhere you go
+                  your hunger is satisfied. The best chicken & burgers those are
+                  yummy.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <img src="./assets/Frame (4).png" alt="" />
+                  <div class="head-name">
+                    <h2 >Natasha D</h2>
+                    <h4 t="cleint-city">Newyork</h4>
+                  </div>
+                </div>
+                <p t="client-review">
+                  They known for its fabulous taste and food. Anywhere you go
+                  your hunger is satisfied. The best chicken & burgers those are
+                  yummy.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <img src="./assets/Frame (4).png" alt="" />
+                  <div class="head-name">
+                    <h2 >Natasha D</h2>
+                    <h4 t="cleint-city">Newyork</h4>
+                  </div>
+                </div>
+                <p t="client-review">
+                  They known for its fabulous taste and food. Anywhere you go
+                  your hunger is satisfied. The best chicken & burgers those are
+                  yummy.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <img src="./assets/Frame (4).png" alt="" />
+                  <div class="head-name">
+                    <h2 >Natasha D</h2>
+                    <h4 t="cleint-city">Newyork</h4>
+                  </div>
+                </div>
+                <p t="client-review">
+                  They known for its fabulous taste and food. Anywhere you go
+                  your hunger is satisfied. The best chicken & burgers those are
+                  yummy.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-head">
+                  <img src="./assets/Frame (4).png" alt="" />
+                  <div class="head-name">
+                    <h2 >Natasha D</h2>
+                    <h4 t="cleint-city">Newyork</h4>
+                  </div>
+                </div>
+                <p t="client-review">
+                  They known for its fabulous taste and food. Anywhere you go
+                  your hunger is satisfied. The best chicken & burgers those are
+                  yummy.
+                </p>
+              </div>
+              
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="fixed-banner">
+        <div class="overlay"></div>
+        <div class="banner-content"></div>
+      </section>
+      <section class="offers container">
+        <div class="offers-info" data-aos="fade-up">
+          <h3 t="offers-label">OFFERS</h3>
+          <h1 t="offer-dishes-title">Our Offer Dishes</h1>
+          <p t="offer-dishes-desc">
+            Our chefs create melt-in-your-mouth dishes that'll satiate even the
+            fussiest eaters now the dishes are in offers use it based on hunger.
+          </p>
+        </div>
+        <div class="offers-cards">
+          <div class="offers-card1" data-aos="fade-right">
+            <div class="card-info">
+              <img src="./assets/Frame (5).png" alt="" />
+              <h3 t="offer-title-1">50% Offer Going</h3>
+              <h1 t="burger-title">Chicken Burger</h1>
+              <p t="burger-desc">Chicken burger with the tasty toppings and leaves.</p>
+            </div>
+            <div class="card-img">
+              <img src="./assets/IMAGE (14).png" alt="" />
+            </div>
+          </div>
+          <div class="offers-card2" data-aos="fade-left">
+            <div class="card-info">
+              <img src="./assets/Frame (7).png" alt="" />
+              <h3 t="offer-title-1">50% Offer Going</h3>
+              <h1 t="pizza-title">Chicken Pizza</h1>
+              <p t="pizza-desc">Pizza with multiple flavor and the toping are mixed.</p>
+            </div>
+            <div class="card-img">
+              <img src="./assets/IMAGE (17).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular container">
+        <div class="offers-info" data-aos="fade-up">
+          <h3 t="popular-label">MENU</h3>
+          <h1 t="popular-title">Popular Dishes</h1>
+          <p t="popular-desc">
+            There is a game between the waiters in restaurant to see who serves
+            the food to each table fastest. That led to attempting the Guinness
+            Record.
+          </p>
+        </div>
+        <div class="popular-cards">
+          <div class="popular-card" data-aos="fade-right">
+            <div class="card-img">
+              <img src="./assets/IMAGE (18).png" alt="" />
+            </div>
+            <div class="popular-name">
+              <h2 t="dish-manjoori">Chicken Manjoori</h2>
+              <h2>$15</h2>
+            </div>
+            <p t="dish-manjoori-desc">Dish relished by all age groups as a starter dish at parties.</p>
+          </div>
+          <div class="popular-card" data-aos="fade-up">
+            <div class="card-img">
+              <img src="./assets/IMAGE (19).png" alt="" />
+            </div>
+            <div class="popular-name">
+              <h2 t="hotdog">Hotdog</h2>
+              <h2>$10</h2>
+            </div>
+            <p t="hotdog-desc">Grilled sausage served in the slit of a partially sliced bun.</p>
+          </div>
+          <div class="popular-card" data-aos="fade-down">
+            <div class="card-img">
+              <img src="./assets/IMAGE (20).png" alt="" />
+            </div>
+            <div class="popular-name">
+              <h2 t="fresh-juice">Fresh Salom</h2>
+              <h2>$5</h2>
+            </div>
+            <p t="fresh-juice-desc">
+              Beat the health blues with our Super Immune Blue Juice Recipe.
+            </p>
+          </div>
+          <div class="popular-card" data-aos="fade-left">
+            <div class="card-img">
+              <img src="./assets/IMAGE (21).png" alt="" />
+            </div>
+            <div class="popular-name">
+              <h2 t="veg-burger">Veg Burger</h2>
+              <h2>$10</h2>
+            </div>
+            <p t="veg-burger-desc">Burgers may be made from ingredients like beans.</p>
+          </div>
+        </div>
+        <button>See all dishes</button>
+      </section>
+      <section class="services">
+        <div class="services-wrap container">
+          <div class="services-info" data-aos="fade-right">
+            <h3 t="what-we-offer">WHAT WE OFFER</h3>
+            <h1 t="great-services">Our Great Services</h1>
+            <p t="services-desc">
+              The atmosphere set the stage. It’s about more than just a dining
+              room away from your home. food takes the spotlight as guests.
+            </p>
+          </div>
+          <div class="services-cards" data-aos="fade-left">
+            <div class="services-card">
+              <img src="./assets/IMAGE (22).png" alt="" />
+              <h2 t="service-247">Opened 24/7</h2>
+            </div>
+            <div class="services-card">
+              <img src="./assets/IMAGE (23).png" alt="" />
+              <h2 t="service-menu">Special Menus</h2>
+            </div>
+            <div class="services-card">
+              <img src="./assets/Vector (7).png" alt="" />
+              <h3 t="home-delivery">Home Delivery</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog container">
+        <div class="offers-info" data-aos="fade-up">
+          <h3 t="blog-label">BLOG</h3>
+          <h1 t="blog-title">Be First Who Read News</h1>
+          <p t="blog-desc">
+            Explore the latest stories about our dishes, offers, events and
+            future plans here.
+          </p>
+        </div>
+        <div class="blog-cards">
+          <div class="blog-card" data-aos="fade-right">
+            <div class="blog-card-img">
+              <img src="./assets/Frame (8).png" alt="" />
+            </div>
+            <div class="blog-card-info">
+              <div class="date">
+                <h3 t="blog-category">DELISIOUS</h3>
+                <h3 t="blog-date">MARCH 19, 2022</h3>
+              </div>
+              <h1 t="blog-headline">The Legend of US Cuisine: The Story of Hungry People</h1>
+              <p t="blog-text">
+                Capitalize on low-hanging fruit to identify a ballpark value
+                added matrix economically and the creative activity to beta test
+                override the food quality.
+              </p>
+            </div>
+          </div>
+          <div class="blog-card" data-aos="fade-right">
+            <div class="blog-card-img">
+              <img src="./assets/Frame (8).png" alt="" />
+            </div>
+            <div class="blog-card-info">
+              <div class="date">
+                <h3 t="blog-category">DELISIOUS</h3>
+                <h3 t="blog-date">MARCH 19, 2022</h3>
+              </div>
+              <h1 t="blog-headline">The Legend of US Cuisine: The Story of Hungry People</h1>
+              <p t="blog-text">
+                Capitalize on low-hanging fruit to identify a ballpark value
+                added matrix economically and the creative activity to beta test
+                override the food quality.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="book">
+        <div class="book-main-wrap">
+          <div class="book-main" data-aos="fade-up">
+            <div class="book-info">
+              <h3 t="reservation-label">RESERVATION</h3>
+              <h1 t="book-table-title">Book Your Table</h1>
+            </div>
+            <div class="book-inputs">
+              <div class="inputs-head">
+                <input type="text" placeholder="Name" t="placeholder-name" />
+                <input type="email" placeholder="eEmail" t="placeholder-email"/>
+              </div>
+              <div class="inputs-bott">
+                <input type="text" placeholder="Person" t="placeholder-person" />
+                <input type="text" placeholder="Timing" t="placeholder-timing"/>
+                <input type="date" placeholder="Date" />
+              </div>
+            </div>
+            <button t="book-button">Book A Table</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrap container">
+        <div class="footer-first">
+          <h2 t="footer-tag">#TheTastEat</h2>
+          <img src="./assets/logo.png" alt="" />
+          <div class="soc">
+            <img src="./assets/IMAGE (5).png" alt="" />
+            <img src="./assets/IMAGE (6).png" alt="" />
+            <img src="./assets/IMAGE (4).png" alt="" />
+            <img src="./assets/IMAGE (7).png" alt="" />
+          </div>
+        </div>
+        <div class="footer-second">
+          <h3 t="footer-contact-title">CONTACT</h3>
+          <h2 t="footer-mailing">Join our mailing list for updates, Get news & offers events.</h2>
+          <h3 t="footer-hours-title">WORKING HOURS</h3>
+        </div>
+        <div class="footer-third">
+          <div class="third-first">
+            <h3 t="footer-address">5 Rue Dalou, 75015 Paris</h3>
+            <h4 t="footer-phone">+123 456 789</h4>
+            <h4 t="footer-mail">josefin@mail.com</h4>
+          </div>
+          <div class="third-mid">
+            <input type="email" placeholder="Email" />
+            <button t="subscribe">Subscribe</button>
+          </div>
+          <div class="third-end">
+            <div class="end-one">
+              <h2 t="mon-fri">Mon – Fri:</h2>
+              <h3 t="time-mon-fri">7.00am – 6.00pm</h3>
+            </div>
+            <div class="end-one">
+              <h2 t="sat">Sat:</h2>
+              <h3 t="time-sat">7.00am – 6.00pm</h3>
+            </div>
+            <div class="end-one">
+              <h2 t="sun">Sun:</h2>
+              <h3 t="time-sun">8.00am – 6.00pm</h3>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="end-info1">
+            <h4>
+              © Copyright - TastEat | Designed by <span>VictorFlow</span> -
+              Powered by <span>Webflow</span>
+            </h4>
+          </div>
+          <div class="end-info2">
+            <h4 t="styleguide">Styleguide</h4>
+            <h4 t="licenses">Licenses</h4>
+            <h4 t="protected">Protected</h4>
+            <h4 t="not-found">Not Found</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          756: {
+            slidesPerView: 1.3,
+            spaceBetween: 20,
+          },
+          968: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 2.3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
