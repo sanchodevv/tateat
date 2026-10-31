@@ -7,8 +7,8 @@
 html,
 body {
   color: inherit;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow-x: clip;
+  
 
   font-family: "Josefin Sans", sans-serif;
 }
@@ -21,6 +21,7 @@ li,
 ol {
   list-style: none;
 }
+
 button {
   cursor: pointer;
   font-family: "Josefin Sans", sans-serif;
@@ -196,9 +197,9 @@ header {
   .call {
     padding: 15px 37px;
   }
-.lang-switcher select{
-  width: 40px;
-}
+  .lang-switcher select {
+    width: 40px;
+  }
 }
 @media (max-width: 450px) {
   .burger img {
@@ -477,8 +478,6 @@ header {
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
-
-  position: -webkit-sticky;
   position: sticky;
   top: 40px;
 }
@@ -542,17 +541,11 @@ header {
   flex-direction: column;
   align-items: stretch;
   gap: 15px;
-  margin-top: 60px;
-  overflow-y: auto;
-  max-height: calc(100vh - 80px);
+  /* overflow-y: auto; */
+  /* margin-top: 60px; */
 }
 
-.menu-dishes::-webkit-scrollbar {
-  width: 4px;
-}
-.menu-dishes::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-}
+
 .dishes-card {
   display: flex;
   flex-direction: column;
@@ -565,7 +558,7 @@ header {
   line-height: 50px;
   font-weight: 400;
   font-family: "Cormorant Infant", serif;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .dish {
@@ -609,20 +602,47 @@ header {
 @media (max-width: 970px) {
   .menu {
     flex-direction: column;
-    align-items: start;
+    align-items: stretch;
   }
-  .dishes-card span {
-    width: 400px;
+  .menu-info {
+    position: static;
+  }
+  .menu-dishes {
+    flex: unset;
   }
 }
 @media (max-width: 767px) {
-  .dishes-card span {
-    width: 260px;
+  .menu-info h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .menu-info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .menu-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .dish {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 576px) {
-  .dishes-card span {
+  .dish span {
     display: none;
+  }
+  .name h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .name p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .dishes-card h3 {
+    font-size: 28px;
+    line-height: 38px;
   }
 }
 /* clients */
@@ -707,7 +727,9 @@ header {
   font-weight: 400;
   color: #e1b168;
 }
-
+.swiper-pagination {
+  margin-top: 20px;
+}
 .swiper-pagination span {
   width: 20px;
   height: 20px;
@@ -1022,8 +1044,10 @@ header {
 .blog-cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .blog-card {
   border: 1px solid #999999;
